@@ -1,0 +1,6 @@
+*.pyc
+.idea/
+*.sql
+*.primary
+*.replica1
+*.replica2
