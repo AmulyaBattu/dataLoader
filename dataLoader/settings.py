@@ -82,28 +82,21 @@ DATABASES = {
     'primary': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.primary'),
-        'USER': 'primary',
-        'PASSWORD':'primary',
-        'PORT':''
+
     },
     'replica1': {
         'ENGINE':'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.replica1'),
-        'USER': 'replica',
-        'PASSWORD':'replica',
-        'PORT':''
+
     },
     'replica2': {
         'ENGINE':'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.replica2'),
-        'USER': 'replica',
-        'PASSWORD':'replica',
-        'PORT':''
     },
 
 }
 
-DATABASE_ROUTER = ['dataLoader.routers.PrimaryReplicaRouter']
+DATABASE_ROUTERS = ['dataLoader.routers.PrimaryReplicaRouter']
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
