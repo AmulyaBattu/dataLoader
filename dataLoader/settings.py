@@ -97,6 +97,7 @@ DATABASES = {
 }
 
 DATABASE_ROUTERS = ['dataLoader.routers.PrimaryReplicaRouter']
+FIXTURES_DIRS = ('/Users/Amulya/PycharmProjects/dataLoader/dl/fixtures')
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
